@@ -1,8 +1,11 @@
-
 @media screen and (max-width: 768px) {
     img {
         width: 100%; /* 모바일 화면에 맞게 너비 조정 */
         height: auto; /* 비율 유지 */
+    }
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
