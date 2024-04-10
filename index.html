@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>새로 가입한 분들을 위한 안내사항</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+ <style>
+        .page {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="page1" class="page active">
+        <h1>매뉴얼</h1>
+        <h2>학생 연구원 등록.</h2>h2>
+        <p>학생연구원 등록방법 안내드립니다.
+          이건 여러분들 돈 받는 데에 중요하기도 하고 교수님께서 행정처리를 하실 때 조금 귀찮아지실 수 있으므로 되도록 빨리 해주시면 감사하겠습니다!</p>
+        <h3> 1. 학생연구원 계좌 등록 </h3>
+        <p>학교 포털 - [학생연구원연구지원포털]의 [인건비계좌 변경신청]에서 인건비 계좌를 등록한 후 교수님께 말씀드리기.</p>
+      
+        <a href="path/to/your/NationalResearcherNumberGuide.pdf" download="국가연구자번호발급방법.pdf">
+            국가연구자번호 발급방법 PDF 다운로드
+        </a>
+    </div>
+    <div id="page2" class="page">
+        <h1>Overleaf 사용법</h1>
+        <p>Overleaf는 온라인 LaTeX 편집기입니다. 이 문서는 Overleaf 사용법에 대한 기본적인 안내를 제공합니다.</p>
+    </div>
+    
+    <div>
+        <button onclick="changePage(1)">1</button>
+        <button onclick="changePage(2)">2</button>
+    </div>
+
+    <script>
+        function changePage(pageNumber) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById('page' + pageNumber).classList.add('active');
+        }
+    </script>
+
+
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
