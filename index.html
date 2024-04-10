@@ -138,15 +138,28 @@
         <button onclick="changePage(4)">4</button>
     </div>
 
-    <script>
-        function changePage(pageNumber) {
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
-            document.getElementById('page' + pageNumber).classList.add('active');
+    html
+
+
+<script>
+    function checkPage() {
+        const pageNumber = window.location.hash.replace('#', '');
+        if(pageNumber) {
+            changePage(pageNumber);
         }
-    </script>
+    }
+
+    function changePage(pageNumber) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        document.getElementById('page' + pageNumber).classList.add('active');
+        window.location.hash = pageNumber;
+        window.scrollTo(0, 0);
+    }
+    document.addEventListener('DOMContentLoaded', checkPage);
+</script>
 
 
     <!-- End Document
