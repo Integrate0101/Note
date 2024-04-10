@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    flex-direction: column; /* 요소들을 수직 방향으로 쌓음 */
+    min-height: 100vh; /* 전체 높이를 화면에 맞춤 */
+    margin: 0; /* 기본 마진 제거 */
+}
