@@ -3,6 +3,9 @@
         width: 100%; /* 모바일 화면에 맞게 너비 조정 */
         height: auto; /* 비율 유지 */
     }
+}
+
+@media screen and (max-width: 992px) {
     body {
         padding-left: 35px;
         padding-right: 35px;
