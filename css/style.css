@@ -6,8 +6,3 @@ body {
     min-height: 100vh; /* 전체 높이를 화면에 맞춤 */
     margin: 0; /* 기본 마진 제거 */
 }
-.center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
